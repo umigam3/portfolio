@@ -6,56 +6,82 @@
     <title>Gerard Doncel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom.css">
     <script src="https://kit.fontawesome.com/9009314442.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <main class="container-fluid">
         <div class="row">
-            <section class="vh-100 col-12 col-lg-6 order-lg-1 order-1 bg-dark left-section d-flex flex-column align-items-center justify-content-center overflow-hidden">
-                <img src="assets/avatar.png" class="rounded-circle mb-4" width="175" alt="Rounded Image">
+            <section class="vh-100 col-12 col-lg-6 order-lg-1 order-1 bg-dark left-section d-flex flex-column align-items-center justify-content-center overflow-hidden">            
+                <img src="assets/avatar.png" class="rounded-circle mb-4 position-relative" width="175" alt="Rounded Image">
                 <h1 class="text-light text-center font-weight-bold mb-2">Gerard Doncel Gutiérrez</h1>
-                <h5 class="text-light text-center mb-4">Junior Developer at 3&Punt</h5>
-                <ul class="d-flex flex-column align-items-center justify-content-center text-light mb-4">
-                    <a href="#aboutme" class="text-light text-decoration-none"><li>— About Me —</li></a>
-                    <a href="#experience" class="text-light text-decoration-none"><li>— Experiencie —</li></a>
-                    <a href="#education" class="text-light text-decoration-none"><li>— Education —</li></a>
-                    <a href="#projects" class="text-light text-decoration-none"><li>— Projects —</li></a>
+                <h5 class="text-light text-center mb-4 text-muted">Junior Developer at 3&Punt</h5>
+                <ul class="d-flex flex-column align-items-center justify-content-center mb-4">
+                    <a id="about_" href="#about" class="text-muted text-decoration-none selected mb-1 zoom-icon"><li><i class="fa-solid fa-address-card mr-2"></i>About Me</li></a>
+                    <a id="experiencie_" href="#experience" class="text-muted text-decoration-none mb-1 zoom-icon"><li><i class="fa-solid fa-user-tie mr-2"></i>Experiencie</li></a>
+                    <a id="education_" href="#education" class="text-muted text-decoration-none mb-1 zoom-icon"><li><i class="fa-solid fa-book mr-2"></i>Education</li></a>
+                    <a id="projects_" href="#projects" class="text-muted text-decoration-none mb-1 zoom-icon"><li><i class="fa-solid fa-gear mr-2"></i>Projects</li></a>
                 </ul>
                 <ul class="nav">
                     <li>
-                        <a href="https://github.com/umigam3" target="_blank" class="text-light"><i class="fa-brands fa-github fa-2x px-3 zoom-icon"></i></a>
+                        <a href="https://github.com/umigam3" target="_blank" class="text-muted"><i class="fa-brands fa-github fa-2x px-3 zoom-icon"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/gerard-doncel-gutierrez/" target="_blank" class="text-light"><i class="fa-brands fa-linkedin fa-2x px-3 zoom-icon"></i></a>
+                        <a href="https://www.linkedin.com/in/gerard-doncel-gutierrez/" target="_blank" class="text-muted"><i class="fa-brands fa-linkedin fa-2x px-3 zoom-icon"></i></a>
                     </li>
                 </ul>
             </section>
             <section class="col-12 col-lg-6 order-lg-2 order-2 bg-dark right-section p-5">
                 <div>
-                    <h3 id="aboutme" class="text-light font-weight-bold mb-2">About Me</h3>
-                    <p class="text-light text-justify mb-5">My name is Gerard Doncel, and I am a computer engineer with experience as a full-stack developer. 
-                    I have experience working with C++, AngularJS, HTML, JavaScript, CSS, WordPress, PHP, MySQL, and Laragon. 
+                    <h3 id="about" class="text-light font-weight-bold mb-2">About Me</h3>
+                    <p class="text-muted text-justify mb-5">I am a computer engineer with experience as a full-stack developer. 
+                    I have <span class="text-light">experience working with C++, AngularJS, HTML, JavaScript, CSS, WordPress, PHP, MySQL, and Laragon.</span> 
                     Recently, I have been exploring the e-learning industry and have been developing plugins for Moodle. 
-                    With my passion for coding and eagerness to learn, I am constantly seeking new challenges to enhance my skills 
+                    With my passion for coding and eagerness to learn, I am constantly <span class="text-light">seeking new challenges to enhance my skills</span> 
                     and make meaningful contributions to the tech community.</p>
                     <h3 id="experience" class="text-light font-weight-bold mb-2">Experiencie</h3>
-                    <p class="text-light text-justify mb-5">My name is Gerard Doncel, and I am a computer engineer with experience as a full-stack developer. 
-                        I have experience working with C++, AngularJS, HTML, JavaScript, CSS, WordPress, PHP, MySQL, and Laragon. 
-                        Recently, I have been exploring the e-learning industry and have been developing plugins for Moodle. 
-                        With my passion for coding and eagerness to learn, I am constantly seeking new challenges to enhance my skills 
-                        and make meaningful contributions to the tech community.</p>
+                    <div class="card my-3 bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Junior Developer</h5>
+                            <h6 class="card-subtitle mb-3">3&Punt</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Jan 2023 - Present</h6>
+                            <p class="card-text text-justify text-muted">
+                                Development of Moodle pluguins using Moodle API.
+                                Resolving minor issues for various Moodle websites.
+                                Worked with <span class="text-light">HTML, JavaScript, Mustache</span> for frontend development.
+                                Worked with <span class="text-light">PHP, SQL and Laragon</span> for backend development.</p>
+                        </div>                        
+                    </div>
+                    <div class="card mb-5 bg-dark text-light ">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Full Stack Developer Trainee</h5>
+                            <h6 class="card-subtitle mb-3">Namastech</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Apr 2022 - Sep 2022</h6>
+                            <p class="card-text text-justify text-muted">
+                                Fixing general bugs of their web application. (4DMOVIN)
+                                Development of small tools to imporve web utility.
+                                Worked with <span class="text-light">AngularJS, Typescript, HTML and CSS</span> for frontend development.
+                                Worked with <span class="text-light">PHP and SQL</span> for backend development.</p>
+                        </div>                        
+                    </div>
                     <h3 id="education" class="text-light font-weight-bold mb-2">Education</h3>
-                    <p class="text-light text-justify mb-5">My name is Gerard Doncel, and I am a computer engineer with experience as a full-stack developer. 
-                        I have experience working with C++, AngularJS, HTML, JavaScript, CSS, WordPress, PHP, MySQL, and Laragon. 
-                        Recently, I have been exploring the e-learning industry and have been developing plugins for Moodle. 
-                        With my passion for coding and eagerness to learn, I am constantly seeking new challenges to enhance my skills 
-                        and make meaningful contributions to the tech community.</p>    
+                    <div class="card my-3 bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Computer Engineering</h5>
+                            <h6 class="card-subtitle mb-3">EPSEVG</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Sep 2018 - Jan 2023</h6>
+                        </div>                        
+                    </div>
+                    <div class="card mb-5 bg-dark text-light ">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Bachelor</h5>
+                            <h6 class="card-subtitle mb-3">IES Ernest Lluch i Martí</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Sep 2016 - Jun 2018</h6>
+                        </div>                        
+                    </div>
                     <h3 id="projects" class="text-light font-weight-bold mb-2">Projects</h3>
-                    <p class="text-light text-justify mb-5">My name is Gerard Doncel, and I am a computer engineer with experience as a full-stack developer. 
-                        I have experience working with C++, AngularJS, HTML, JavaScript, CSS, WordPress, PHP, MySQL, and Laragon. 
-                        Recently, I have been exploring the e-learning industry and have been developing plugins for Moodle. 
-                        With my passion for coding and eagerness to learn, I am constantly seeking new challenges to enhance my skills 
-                        and make meaningful contributions to the tech community.</p>    
                 </div>
             </section>
         </div>
