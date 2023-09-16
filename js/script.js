@@ -1,11 +1,10 @@
 function isElementInViewport (el) {
   var rect = el.getBoundingClientRect();
   var vHeight = window.innerHeight || document.documentElement.clientHeight;
-  console.log('vHeight: ' + vHeight); // Add this line
 
   return (
     rect.bottom >= 0 && // Element's bottom is at or above the top of the viewport
-    rect.top <= vHeight / 3 // Element's top is within the top half of the viewport
+    rect.top <= vHeight / 4 // Element's top is within the top half of the viewport
   );
 }
 

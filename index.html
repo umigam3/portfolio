@@ -15,8 +15,8 @@
 <body>
     <main class="container-fluid">
         <div class="row">
-            <section class="vh-100 col-12 col-lg-6 order-lg-1 order-1 bg-dark left-section d-flex flex-column align-items-center justify-content-center overflow-hidden">            
-                <img src="assets/avatar.png" class="rounded-circle mb-4 position-relative" width="175" alt="Rounded Image">
+            <section id="particle-canvas" class="vh-100 col-12 col-lg-6 order-lg-1 order-1 left-section d-flex flex-column align-items-center justify-content-center overflow-hidden bg-dark">
+                <img src="assets/avatar.png" class="bottomRightShadow rounded-circle mb-4 position-relative" width="175" alt="Rounded Image">
                 <h1 class="text-light text-center font-weight-bold mb-2">Gerard Doncel Gutiérrez</h1>
                 <h5 class="text-light text-center mb-4 text-muted">Junior Developer at 3&Punt</h5>
                 <ul id="index" class="d-flex flex-column align-items-center justify-content-center mb-4">
@@ -34,47 +34,53 @@
                     </li>
                 </ul>
             </section>
-            <section class="col-12 col-lg-6 order-lg-2 order-2 bg-dark right-section p-5">
+            <section class="col-12 col-lg-6 order-lg-2 order-2 right-section px-5 py-4 bg-dark">
                 <div>
                     <h3 id="about" class="text-light font-weight-bold mb-4">About Me</h3>
                     
-                    <p class="text-muted text-justify mb-3">I am a computer engineer with experience as a full-stack developer. 
-                    I have <span class="text-light">experience working with C++, AngularJS, HTML, JavaScript, CSS, WordPress, PHP, MySQL, and Laragon.</span> 
-                    Recently, I have been exploring the e-learning industry and have been developing plugins for Moodle. 
-                    With my passion for coding and eagerness to learn, I am constantly <span class="text-light">seeking new challenges to enhance my skills</span> 
+                    <p class="text-muted text-justify mb-4">Computer engineer with experience as a full-stack developer. 
+                    I have some <span class="text-light">experience working with C++, AngularJS, HTML, JavaScript, CSS, WordPress, PHP, MySQL.</span> 
+                    Recently, I have been exploring the e-learning industry and have been developing plugins for Moodle.
+                    With my passion for coding and will to learn, I am constantly <span class="text-light">seeking new challenges to enhance my skills</span> 
                     and make meaningful contributions to the tech community.</p>
-
-                    <p class="text-muted text-justify mb-5">I am also deeply interested in the world of <span class="text-light">artificial intelligence</span> 
-                    and machine learning. These cutting-edge technologies have fascinated me for their potential to revolutionize various industries, 
-                    from healthcare to finance. I've started delving into <span class="text-light">Python and TensorFlow</span>, aiming to harness the power of 
-                    machine learning algorithms for solving complex problems and creating intelligent applications. 
-                    Exploring the intersection of <span class="text-light">computer engineering</span> and AI is an exciting journey that I am eager to pursue further.</p>
                     
                     <h3 id="experience" class="text-light font-weight-bold mb-4">Experience</h3>
-                    <div class="card my-3 bg-dark text-light">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold">Junior Developer</h5>
-                            <h6 class="card-subtitle mb-3">3&Punt</h6>
-                            <h6 class="card-subtitle mb-2 text-muted">Jan 2023 - Present</h6>
-                            <p class="card-text text-justify text-muted">
-                                Development of Moodle pluguins using Moodle API.
-                                Resolving minor issues for various Moodle websites.
-                                Worked with <span class="text-light">HTML, JavaScript, Mustache</span> for frontend development.
-                                Worked with <span class="text-light">PHP, SQL and Laragon</span> for backend development.</p>
-                        </div>                                                          
-                    </div>
-                    <div class="card mb-5 bg-dark text-light ">
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold">Full Stack Developer Trainee</h5>
-                            <h6 class="card-subtitle mb-3">Namastech</h6>
-                            <h6 class="card-subtitle mb-2 text-muted">Apr 2022 - Sep 2022</h6>
-                            <p class="card-text text-justify text-muted">
-                                Fixing general bugs of their web application. (4DMOVIN)
-                                Development of small tools to imporve web utility.
-                                Worked with <span class="text-light">AngularJS, Typescript, HTML and CSS</span> for frontend development.
-                                Worked with <span class="text-light">PHP and SQL</span> for backend development.</p>
-                        </div>                        
-                    </div>
+                    <a class="experience-card-link" href="https://tresipunt.com/en/" target="_blank">
+                        <div class="experience-card my-3 bg-dark text-light">
+                            <div class="card-body d-flex">
+                                <div class="card-timeline w-25">
+                                    <h6 class="text-muted">Jan 2023 -<br> Present</h6>
+                                </div>
+                                <div class="card-timeline w-75">
+                                    <h5 class="card-title font-weight-bold">Junior Developer</h5>
+                                    <h6 class="card-subtitle mb-3">3&Punt</h6>
+                                    <p class="card-text text-justify text-muted">
+                                        Development of Moodle pluguins using Moodle API.
+                                        Resolving minor issues for various Moodle websites.
+                                        Worked with <span class="text-light">HTML, JavaScript, Mustache</span> for frontend development.
+                                        Worked with <span class="text-light">PHP, SQL and Laragon</span> for backend development.</p>    
+                                </div>
+                            </div>                                                          
+                        </div>
+                    </a>
+                    <a class="experience-card-link" href="https://namastech.com/" target="_blank">
+                        <div class="experience-card mb-5 bg-dark text-light">
+                            <div class="card-body d-flex">
+                                <div class="card-timeline w-25">
+                                    <h6 class="text-muted">Apr 2022 -<br> Sep 2022</h6>
+                                </div>
+                                <div class="card-info w-75">
+                                    <h5 class="card-title font-weight-bold">Full Stack Developer Trainee</h5>
+                                    <h6 class="card-subtitle mb-3">Namastech</h6>
+                                    <p class="card-text text-justify text-muted">
+                                        Fixing general bugs of their web application. (4DMOVIN)
+                                        Development of small tools to imporve web utility.
+                                        Worked with <span class="text-light">AngularJS, Typescript, HTML and CSS</span> for frontend development.
+                                        Worked with <span class="text-light">PHP and SQL</span> for backend development.</p>    
+                                </div>
+                            </div>                        
+                        </div>
+                    </a>
                     <h3 id="education" class="text-light font-weight-bold mb-4">Education</h3>
                     <div class="card my-3 bg-dark text-light">
                         <div class="card-body">

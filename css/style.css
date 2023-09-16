@@ -5,6 +5,9 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+    z-index: 2;
 }
 
 *, *:before, *:after {
@@ -16,21 +19,38 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     padding: 0;
     font-weight: normal;
     font-family: 'Poppins', sans-serif;
-  }
-
-ol, ul {
-    list-style: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+/* General */
+p {
+    line-height: 2;
 }
 
 .right-section {
     overflow-y: auto;
-    scroll-padding-top: 50px;
+    scroll-padding-top: 30px;
     scroll-behavior: smooth;
+}
+
+::selection {
+    background: white;
+    color: #343A40;
+}
+
+/* Experience cards */
+.experience-card:hover {
+    transition: 0.3s;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+.experience-card-link:hover {
+    text-decoration: none;
+}
+
+/* Left index */
+ol, ul {
+    list-style: none;
 }
 
 .selected {
@@ -38,9 +58,20 @@ img {
     transform: scale(1.25);
 }
 
-::selection {
-  background: white;
-  color: #343A40;
+/* Image */
+.bottomRightShadow
+{
+  border: solid 1px #555;
+  background-color: #eed;
+  box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Responsive Design */
