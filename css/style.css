@@ -31,14 +31,14 @@ p {
 }
 
 .bg__gradient {
-    height: 500px;
-    width: 500px;
-    background-image: linear-gradient(90deg, #eb3434, #eb5e34, #eb8334, #eba434, #ebcc34, #ebeb34, #c3eb34, #89eb34, #58eb34, #34eb52, #34ebcc, #34d5eb, #34a8eb, #346beb, #3734eb, #7734eb, #a834eb, #eb34c3, #eb3489, #eb3461);
-    filter: blur(400px);
+    height: 100vh;
+    width: 100vh;
+    background-image: linear-gradient(90deg, #eb34c3, #a834eb,#7734eb, #3734eb, #346beb, #34a8eb, #34d5eb, #34a8eb, #346beb, #3734eb, #7734eb, #a834eb, #eb34c3);
+    filter: blur(100vh);
     border-radius: 100%;
     background-size: 1000% 100%;
 
-    animation: gradient 5s infinite ease-out;
+    animation: gradient 10s infinite ease-out;
 
     position: fixed;
     transform: translateX(-50%) translateY(-50%);
@@ -77,7 +77,7 @@ p {
 a.experience-card-link, a.education-card-link {
     text-decoration: none;
 }
-  
+
 /* Left index */
 ol, ul {
     list-style: none;
@@ -108,6 +108,7 @@ img {
 @media (min-width: 992px) {
     .left-section {
         padding-left: 10%;
+        top:0px
     }
 
     .right-section {
