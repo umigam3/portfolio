@@ -6,6 +6,7 @@ html {
     box-sizing: border-box;
     font-size: 16px;
     scroll-behavior: smooth;
+    scroll-padding-top: 42.5px;
 }
 
 *, *:before, *:after {
@@ -31,16 +32,18 @@ p {
 }
 
 .bg__gradient {
-    height: 100vh;
-    width: 100vh;
+    height: 800px;
+    width: 800px;
     background-image: linear-gradient(90deg, #eb34c3, #a834eb,#7734eb, #3734eb, #346beb, #34a8eb, #34d5eb, #34a8eb, #346beb, #3734eb, #7734eb, #a834eb, #eb34c3);
-    filter: blur(100vh);
+    filter: blur(500px);
     border-radius: 100%;
     background-size: 1000% 100%;
 
     animation: gradient 10s infinite ease-out;
 
     position: fixed;
+    top: 0px;
+    left: 0px;
     transform: translateX(-50%) translateY(-50%);
 
     z-index: 0
@@ -49,12 +52,6 @@ p {
 @keyframes gradient {
     0%{background-position:0% 50%}
     100%{background-position:100% 100%}
-}
-
-.right-section {
-    overflow-y: auto;
-    scroll-padding-top: 42.5px;
-    scroll-behavior: smooth;
 }
 
 .bold-text {
@@ -76,6 +73,10 @@ p {
 
 a.experience-card-link, a.education-card-link {
     text-decoration: none;
+}
+
+.left-section {
+    height: 100vh !important;
 }
 
 /* Left index */
@@ -108,17 +109,15 @@ img {
 @media (min-width: 992px) {
     .left-section {
         padding-left: 10%;
-        top:0px
+        position: fixed;
+        height: 100vh !important;
     }
 
     .right-section {
-        height: 100vh;
         scroll-behavior: smooth;
         padding-right: 10% !important;
-    }
+        left: 50%;
 
-    body {
-        overflow: hidden;
     }
 
     .bg__gradient {

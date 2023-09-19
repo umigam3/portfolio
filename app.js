@@ -12,7 +12,7 @@ function initializeApp() {
 
 function addEventListeners() {
     // Event listeners to interactive elements
-    $('.right-section')[0].addEventListener('scroll', elementHandler);
+    document.addEventListener('scroll', elementHandler);
 }
 
 // Main execution - Call the initializeApp function to start your application

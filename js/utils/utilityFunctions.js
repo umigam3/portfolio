@@ -20,7 +20,7 @@ export function elementHandler() {
   })
   
   if (visible) {
-      $('.index-element').removeClass('selected');
+    $('.index-element').removeClass('selected');
     $('#' + visible + '_').addClass('selected');
   }
 };
