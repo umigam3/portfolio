@@ -32,14 +32,14 @@ p {
 }
 
 .bg__gradient {
-    height: 800px;
-    width: 800px;
-    background-image: linear-gradient(90deg, #eb34c3, #a834eb,#7734eb, #3734eb, #346beb, #34a8eb, #34d5eb, #34a8eb, #346beb, #3734eb, #7734eb, #a834eb, #eb34c3);
+    height: 3000px;
+    width: 3000px;
+    background-image: linear-gradient(90deg, #a834eb, #eb34c3, white, red, blue, green);
     filter: blur(500px);
     border-radius: 100%;
     background-size: 1000% 100%;
 
-    animation: gradient 10s infinite ease-out;
+    animation: gradient 0.3s infinite ease-out;
 
     position: fixed;
     top: 0px;
