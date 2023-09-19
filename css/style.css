@@ -31,6 +31,10 @@ p {
     line-height: 2;
 }
 
+.card-text {
+    line-height: 1.5;
+}
+
 .bg__gradient {
     height: 600px;
     width: 600px;
@@ -138,6 +142,22 @@ img {
     outline: none;
     cursor: pointer;
     color: white;
+}
+
+/* Pills */
+.skill-pills {
+    display: inline-block;
+    line-height: 2;
+}
+
+.pill {
+    font-size: 13px;
+    background-color: rgb(255, 255, 255, 0.4)  !important;
+    border-radius: 50px;
+    padding: 2.5px 7.5px;
+    margin: 0px 2.5px;
+    color: black;
+    position: relative;
 }
 
 /* Future */
