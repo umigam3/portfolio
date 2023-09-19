@@ -12,7 +12,7 @@ function isElementInViewport (el) {
 export function elementHandler() {
   
   var visible = 0;
-  var ids = ['about','experience','education','projects'];
+  var ids = ['about','experience','education'];
   ids.forEach(function(id){
     if(isElementInViewport($('#'+id)[0])) {
         visible = id;
@@ -58,3 +58,28 @@ export function animateCursor() {
   })
 }
 
+export function cardTilt() {
+
+  "use strict";
+
+  $(".experience-card").tilt({
+    maxTilt: 5,
+    perspective: 1500,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+    speed: 500,
+    glare: false,
+    maxGlare: 0.1,
+    scale: 1.01
+  });
+
+  $(".education-card").tilt({
+    maxTilt: 5,
+    perspective: 1500,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+    speed: 500,
+    glare: false,
+    maxGlare: 0.1,
+    scale: 1.01
+  });
+
+};

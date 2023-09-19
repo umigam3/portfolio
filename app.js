@@ -1,11 +1,12 @@
 // Import any necessary modules or dependencies
-import { elementHandler, animateCursor } from "./js/utils/utilityFunctions.js";
+import { elementHandler, animateCursor, cardTilt } from "./js/utils/utilityFunctions.js";
 
 // Global variables or constants
 
 function initializeApp() {
     // Code to initialize your application
-    animateCursor();
+    // animateCursor();
+    cardTilt();    
     addEventListeners();
 }
 
