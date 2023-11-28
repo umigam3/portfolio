@@ -35,22 +35,6 @@ p {
     line-height: 1.5;
 }
 
-.bg__gradient {
-    height: 600px;
-    width: 600px;
-    background-color: #a834eb;
-    filter: blur(400px);
-    border-radius: 100%;
-    background-size: 1000% 100%;
-
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    transform: translateX(-50%) translateY(-50%);
-
-    z-index: 0
-}
-
 @keyframes gradient {
     0%{background-position:0% 50%}
     100%{background-position:100% 100%}
